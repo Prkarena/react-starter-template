@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import './index.style.css';
 import { withRouter } from 'react-router-dom';
+import { Box } from '@material-ui/core';
+import Copyright from '../../copyright';
 
 const Layout = (props) => {
 
@@ -42,7 +44,12 @@ const Layout = (props) => {
                         >
                             Login
                         </Button>
-                        {props.children}
+                        <div style={{marginTop:50}}>
+                            {props.children}
+                        </div>
+                        <Box mt={10}>
+                            <Copyright />
+                        </Box>
                     </>
             }
         </>
