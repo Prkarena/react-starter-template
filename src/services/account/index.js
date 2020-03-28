@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = 'https://git.heroku.com/gentle-waters-67526.git/api';
+const API = ' https://shrouded-savannah-79709.herokuapp.com/api';
 
 // login => {email: '',password: ''}
 export const login = (data) => new Promise((resolve,reject) => {
